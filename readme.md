@@ -1,4 +1,4 @@
-# Repairing URL's from the Report Designer HTM/HTML output
+# Repairing URL's from the Report Designer output
 This script repairs the erroneous <a> tag's created by the Report Designer, if hyperlinks are enabled.
 
 If you're creating a report and saving it as an HTM or HTML file, the <a> tags will look like this:
