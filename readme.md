@@ -1,14 +1,14 @@
 # Repairing URL's from the Report Designer HTM/HTML output
-    This script repairs the erroneous <a> tag's created by the Report Designer, if hyperlinks are enabled.
+This script repairs the erroneous <a> tag's created by the Report Designer, if hyperlinks are enabled.
 
-    If you're creating a report and saving it as an HTM or HTML file, the <a> tags will look like this:
-        <a href="True"><nobr>http://www.esri.com/</nobr></a></span>
+If you're creating a report and saving it as an HTM or HTML file, the <a> tags will look like this:
+<a href="True"><nobr>http://www.esri.com/</nobr></a></span>
 
-    This creates a hyperlink using the URL, but that link leads to a non-existent file call "True".
+This creates a hyperlink using the URL, but that link leads to a non-existent file call "True".
 
-    This script will repair those links, and remove the redacted <nobr> tags, making the URL's function correctly.
+This script will repair those links, and remove the redacted <nobr> tags, making the URL's function correctly.
 
-    Occasionally the user will want to make a Table of Contents HTM file in conjunction with the report. This script will detect that TOC file as long as it has the same name as the report HTM file, and update the links in that TOC file to utilize the repaired HTML file.
+Occasionally the user will want to make a Table of Contents HTM file in conjunction with the report. This script will detect that TOC file as long as it has the same name as the report HTM file, and update the links in that TOC file to utilize the repaired HTML file.
 
 ## Caveat
 * This script requires the Beautiful Soup 4 module, found here:
